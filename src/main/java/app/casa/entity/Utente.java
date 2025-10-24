@@ -15,10 +15,10 @@ public class Utente {
     @Column(name = "id_utente")
     private Long idUtente;
 
-    @Column(name = "nome")
+    @Column(name = "nome", nullable = false)
     private String nome;
 
-    @Column(name = "cognome")
+    @Column(name = "cognome", nullable = false)
     private String cognome;
 
     @Column(name = "email", nullable = false, unique = true)
