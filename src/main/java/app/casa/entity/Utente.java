@@ -91,4 +91,5 @@ public class Utente {
     public void setListaSpesas(List<ListaSpesa> listaSpesas) {
         this.listaSpesas = listaSpesas;
     }
+
 }

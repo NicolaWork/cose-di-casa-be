@@ -8,9 +8,7 @@ import app.casa.repository.UtenteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
 
-import java.util.Objects;
 import java.util.Optional;
 
 @Service
@@ -31,5 +29,9 @@ public class UtenteService {
     public Boolean autenticazione(LoginDto loginDto) {
         Optional<Utente> utente = utenteRepository.findByEmail(loginDto.getEmail());
         return utente.filter(value -> passwordEncoder.matches(loginDto.getPassword(), value.getPassword())).isPresent();
+    }
+
+    public Utente getUtente(String mailUtente) {
+        return utenteRepository.findByEmail(mailUtente).get();
     }
 }

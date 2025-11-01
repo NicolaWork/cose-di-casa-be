@@ -15,7 +15,7 @@ public class Prodotto {
     private Long idProdotto;
 
     @Column(name = "nome", nullable = false)
-    private String name;
+    private String nome;
 
     @Column(name = "categoria")
     private String categoria;
@@ -38,12 +38,12 @@ public class Prodotto {
         this.idProdotto = idProdotto;
     }
 
-    public String getName() {
-        return name;
+    public String getNome() {
+        return nome;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getCategoria() {
