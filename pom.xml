@@ -11,7 +11,7 @@
 	<groupId>app</groupId>
 	<artifactId>casa</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<nome>casa</nome>
+	<name>casa</name>
 	<description>Cose di casa app</description>
 	<url/>
 	<licenses>
@@ -37,12 +37,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
-            <version>4.0.0-M1</version>
         </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-            <version>4.0.0-M1</version>
         </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -60,9 +58,8 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <scope>runtime</scope>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
         </dependency>
         <dependency>
             <groupId>io.jsonwebtoken</groupId>

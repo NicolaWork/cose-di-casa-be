@@ -14,7 +14,7 @@ import java.util.Optional;
 @Service
 public class UtenteService {
 
-    private  final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+    private final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
     @Autowired
     UtenteRepository utenteRepository;

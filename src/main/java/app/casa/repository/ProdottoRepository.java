@@ -1,6 +1,5 @@
 package app.casa.repository;
 
-import app.casa.dto.ProdottoDto;
 import app.casa.entity.Prodotto;
 import app.casa.entity.Utente;
 import org.springframework.data.jpa.repository.JpaRepository;

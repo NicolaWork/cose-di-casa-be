@@ -1,0 +1,19 @@
+services:
+  app-casa:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: im_app_casa
+    container_name: app-casa-be
+    ports:
+      - "8080:8080"
+
+  postgres-db:
+    image: postgres:latest
+    container_name: app-casa-db
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=app_casa_db
+    ports:
+      - "5432:5432"

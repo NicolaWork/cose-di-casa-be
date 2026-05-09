@@ -6,7 +6,6 @@ import app.casa.entity.Utente;
 import app.casa.mapper.ProdottoMapper;
 import app.casa.repository.ProdottoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
