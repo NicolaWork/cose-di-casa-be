@@ -3,10 +3,11 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: im_app_casa
     container_name: app-casa-be
     ports:
       - "8080:8080"
+    networks:
+      - net-app-casa
 
   postgres-db:
     image: postgres:latest
@@ -17,3 +18,10 @@ services:
       - POSTGRES_DB=app_casa_db
     ports:
       - "5432:5432"
+    networks:
+      - net-app-casa
+
+networks:
+  net-app-casa:
+    name: net-app-casa
+    driver: bridge
